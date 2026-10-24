@@ -2,7 +2,7 @@
 # Multi-stage build for @civicsignal/web (Next.js standalone output)
 
 # ─── base ─────────────────────────────────────────────────────────────────────
-FROM node:22-alpine AS base
+FROM node:24.22.1-alpine AS base
 RUN corepack enable && corepack prepare pnpm@9 --activate
 
 # ─── deps ─────────────────────────────────────────────────────────────────────
